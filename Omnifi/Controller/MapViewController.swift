@@ -116,6 +116,7 @@ class MapViewController: UIViewController {
         restaurants = retrievedRestaurants
         mapView.addAnnotations(restaurants)
     }
+    
 }
 
 // MARK: - MKMapViewDelegate Functions
