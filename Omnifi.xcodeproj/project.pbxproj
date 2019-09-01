@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F074AB6231ADC9D00E977DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F074AB5231ADC9D00E977DF /* AppDelegate.swift */; };
+		8F074AB8231ADC9D00E977DF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F074AB7231ADC9D00E977DF /* MapViewController.swift */; };
+		8F074ABD231ADC9E00E977DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F074ABC231ADC9E00E977DF /* Assets.xcassets */; };
+		8F074AC0231ADC9E00E977DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F074ABE231ADC9E00E977DF /* LaunchScreen.storyboard */; };
+		8F074ACE231ADD1300E977DF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F074ACD231ADD1300E977DF /* Extensions.swift */; };
+		8F074AD0231ADD3D00E977DF /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F074ACF231ADD3D00E977DF /* Service.swift */; };
+		8F074AD2231ADEBE00E977DF /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F074AD1231ADEBE00E977DF /* Restaurant.swift */; };
+		8F074AD4231ADF9800E977DF /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F074AD3231ADF9800E977DF /* Alert.swift */; };
+		8F074AD8231AE24400E977DF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F074AD7231AE24400E977DF /* DetailViewController.swift */; };
+		8F074ADA231AF78E00E977DF /* RestaurantAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F074AD9231AF78E00E977DF /* RestaurantAnnotation.swift */; };
+		8F074ADC231BC17500E977DF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F074ADB231BC17500E977DF /* DetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8F074AB2231ADC9D00E977DF /* Omnifi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Omnifi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F074AB5231ADC9D00E977DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8F074AB7231ADC9D00E977DF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8F074ABC231ADC9E00E977DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F074ABF231ADC9E00E977DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F074AC1231ADC9F00E977DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F074ACD231ADD1300E977DF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8F074ACF231ADD3D00E977DF /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		8F074AD1231ADEBE00E977DF /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		8F074AD3231ADF9800E977DF /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		8F074AD7231AE24400E977DF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8F074AD9231AF78E00E977DF /* RestaurantAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantAnnotation.swift; sourceTree = "<group>"; };
+		8F074ADB231BC17500E977DF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F074AAF231ADC9D00E977DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F074AA9231ADC9D00E977DF = {
+			isa = PBXGroup;
+			children = (
+				8F074AB4231ADC9D00E977DF /* Omnifi */,
+				8F074AB3231ADC9D00E977DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F074AB3231ADC9D00E977DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F074AB2231ADC9D00E977DF /* Omnifi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F074AB4231ADC9D00E977DF /* Omnifi */ = {
+			isa = PBXGroup;
+			children = (
+				8F074ACB231ADCD200E977DF /* Service */,
+				8F074AC7231ADCA900E977DF /* Model */,
+				8F074AC8231ADCB000E977DF /* ViewModel */,
+				8F074AC9231ADCB800E977DF /* View */,
+				8F074ACA231ADCC000E977DF /* Controller */,
+				8F074ACC231ADCD800E977DF /* Helper */,
+				8F074AB5231ADC9D00E977DF /* AppDelegate.swift */,
+				8F074ABC231ADC9E00E977DF /* Assets.xcassets */,
+				8F074ABE231ADC9E00E977DF /* LaunchScreen.storyboard */,
+				8F074AC1231ADC9F00E977DF /* Info.plist */,
+			);
+			path = Omnifi;
+			sourceTree = "<group>";
+		};
+		8F074AC7231ADCA900E977DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8F074AD1231ADEBE00E977DF /* Restaurant.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8F074AC8231ADCB000E977DF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8F074AD9231AF78E00E977DF /* RestaurantAnnotation.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8F074AC9231ADCB800E977DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F074ADB231BC17500E977DF /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8F074ACA231ADCC000E977DF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8F074AB7231ADC9D00E977DF /* MapViewController.swift */,
+				8F074AD7231AE24400E977DF /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8F074ACB231ADCD200E977DF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8F074ACF231ADD3D00E977DF /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8F074ACC231ADCD800E977DF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8F074ACD231ADD1300E977DF /* Extensions.swift */,
+				8F074AD3231ADF9800E977DF /* Alert.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F074AB1231ADC9D00E977DF /* Omnifi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F074AC4231ADC9F00E977DF /* Build configuration list for PBXNativeTarget "Omnifi" */;
+			buildPhases = (
+				8F074AAE231ADC9D00E977DF /* Sources */,
+				8F074AAF231ADC9D00E977DF /* Frameworks */,
+				8F074AB0231ADC9D00E977DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Omnifi;
+			productName = Omnifi;
+			productReference = 8F074AB2231ADC9D00E977DF /* Omnifi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F074AAA231ADC9D00E977DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Vinicius Leal";
+				TargetAttributes = {
+					8F074AB1231ADC9D00E977DF = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 8F074AAD231ADC9D00E977DF /* Build configuration list for PBXProject "Omnifi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F074AA9231ADC9D00E977DF;
+			productRefGroup = 8F074AB3231ADC9D00E977DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F074AB1231ADC9D00E977DF /* Omnifi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F074AB0231ADC9D00E977DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F074AC0231ADC9E00E977DF /* LaunchScreen.storyboard in Resources */,
+				8F074ABD231ADC9E00E977DF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F074AAE231ADC9D00E977DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F074AD4231ADF9800E977DF /* Alert.swift in Sources */,
+				8F074ADA231AF78E00E977DF /* RestaurantAnnotation.swift in Sources */,
+				8F074AD2231ADEBE00E977DF /* Restaurant.swift in Sources */,
+				8F074ADC231BC17500E977DF /* DetailView.swift in Sources */,
+				8F074AB8231ADC9D00E977DF /* MapViewController.swift in Sources */,
+				8F074AD0231ADD3D00E977DF /* Service.swift in Sources */,
+				8F074ACE231ADD1300E977DF /* Extensions.swift in Sources */,
+				8F074AB6231ADC9D00E977DF /* AppDelegate.swift in Sources */,
+				8F074AD8231AE24400E977DF /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8F074ABE231ADC9E00E977DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F074ABF231ADC9E00E977DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F074AC2231ADC9F00E977DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8F074AC3231ADC9F00E977DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F074AC5231ADC9F00E977DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SNY4A7B39;
+				INFOPLIST_FILE = Omnifi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = example.Omnifi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F074AC6231ADC9F00E977DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SNY4A7B39;
+				INFOPLIST_FILE = Omnifi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = example.Omnifi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F074AAD231ADC9D00E977DF /* Build configuration list for PBXProject "Omnifi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F074AC2231ADC9F00E977DF /* Debug */,
+				8F074AC3231ADC9F00E977DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F074AC4231ADC9F00E977DF /* Build configuration list for PBXNativeTarget "Omnifi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F074AC5231ADC9F00E977DF /* Debug */,
+				8F074AC6231ADC9F00E977DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F074AAA231ADC9D00E977DF /* Project object */;
+}
