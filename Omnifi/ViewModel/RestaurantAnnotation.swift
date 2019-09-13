@@ -10,7 +10,8 @@ import Foundation
 import MapKit
 
 // View Model class conforming to the MKAnnotation protocol to associate content with map pins.
-// Also conforms to NSCoding protocol to allow data persistance through user defaults
+// Also conforms to NSCoding protocol, that enables an object to be encoded and decoded
+// for archiving and distribution.
 class RestaurantAnnotation: NSObject, MKAnnotation, NSCoding {
     
     let title: String?
@@ -56,6 +57,7 @@ class RestaurantAnnotation: NSObject, MKAnnotation, NSCoding {
         
         return coordinate
     }
+    
     // Checks if object returned has delivery link. If there's a link, pin color is changed and button appears on DetailView.
     func checkForLink() -> Bool {
         if deliveryLink.isEmpty {

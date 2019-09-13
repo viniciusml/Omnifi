@@ -13,7 +13,13 @@ class Service {
     
     static let shared = Service()
     
+    private init() {}
     /// Fetch list of restaurants.
+    ///
+    /// It accepts a Result tipe: A value that represents either a sucess or a failure,
+    /// including an associated value with each case.
+    ///
+    /// It has two generics inside, one is your object, and the other is an error.
     func fetchRestaurantList(completion: @escaping (Result<[RestaurantElement], Error>) -> ()) {
         
         guard let url = URL(string: "https://www.frankieandbennys.com/trg_restaurant_feed/JSON") else { return }
@@ -22,6 +28,7 @@ class Service {
             
             // Handle error
             if let err = err {
+                // You can call one parameter in completion, instead of 2.
                 completion(.failure(err))
                 return
             }
